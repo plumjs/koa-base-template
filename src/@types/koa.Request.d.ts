@@ -1,7 +1,7 @@
-import * as koa from 'koa'
+import { Context } from 'koa';
 
 declare module 'koa' {
-  interface Request {
+  interface Context {
     auth: {
       /**
        * Auth id

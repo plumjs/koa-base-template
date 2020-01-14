@@ -8,7 +8,7 @@ export function isAuthenticated() {
     const token = getHeaderToken(ctx)
     const decoded = await verifyToken(token)
     if (!decoded) throw new JwtError('01', 'auth error')
-    ctx.request.auth = decoded
+    ctx.auth = decoded
     await next()
   }
 }
