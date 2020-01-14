@@ -10,7 +10,7 @@ import * as conditional from 'koa-conditional-get'
 import * as etag from 'koa-etag'
 import { capture, handle } from './error'
 import { cors as corsConfig } from './config'
-import * as swagger from 'swagger-injector';
+import * as swagger from 'swagger-injector'
 /**
  * The application class
  *
@@ -34,11 +34,13 @@ export class App extends koa {
     App._instance = new App()
     App._config = config
     App._instance.http = createServer(App.instance.callback())
-    App._instance.use(swagger.koa({
-      css: '.info_title {font-size: 50px !important; }',
-      path: `${__dirname}/swagger.json`,
-      route: '/swagger'
-    }))
+    App._instance.use(
+      swagger.koa({
+        css: '.info_title {font-size: 50px !important; }',
+        path: `${__dirname}/swagger.json`,
+        route: '/swagger',
+      })
+    )
     App._instance.use(logger())
     App._instance.use(cors(corsConfig))
     App._instance.use(body(config.body))
