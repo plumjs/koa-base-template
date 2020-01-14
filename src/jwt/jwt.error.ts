@@ -1,8 +1,5 @@
 import { HttpError } from '../error'
 
-/**
- * error instance of student
- */
 class JwtError extends HttpError {
   private static busiCode = '20'
   constructor(

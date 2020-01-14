@@ -1,10 +1,3 @@
-/*
- * @Author: Yu Chen
- * @Date: 2019-01-02 11:54:44
- * @Last Modified by: Yu Chen
- * @Last Modified time: 2019-01-02 14:17:40
- */
-
 import { Context } from 'koa'
 import { getHeaderToken } from './getHeaderToken'
 import { verifyToken } from './verifyToken'

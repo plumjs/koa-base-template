@@ -1,9 +1,3 @@
-/*
- * @Author: Yu Chen
- * @Date: 2019-01-02 10:50:09
- * @Last Modified by:   Yu Chen
- * @Last Modified time: 2019-01-02 10:50:09
- */
 
 import { verify } from 'jsonwebtoken'
 import { jwt } from '../config'

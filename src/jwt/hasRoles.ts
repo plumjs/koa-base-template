@@ -1,10 +1,3 @@
-/*
- * @Author: Yu Chen
- * @Date: 2019-01-02 14:21:37
- * @Last Modified by: Yu Chen
- * @Last Modified time: 2019-01-06 14:35:08
- */
-
 import { Context } from 'koa'
 import { JwtError } from './jwt.error'
 

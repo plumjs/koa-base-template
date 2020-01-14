@@ -1,10 +1,3 @@
-/*
- * @Author: Yu Chen
- * @Date: 2019-01-02 10:50:16
- * @Last Modified by:   Yu Chen
- * @Last Modified time: 2019-01-02 10:50:16
- */
-
 import { Context } from 'koa'
 
 export function getHeaderToken(ctx: Context): string | null {
